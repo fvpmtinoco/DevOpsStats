@@ -1,0 +1,8 @@
+﻿IaC/.terraform
+IaC/dev.tfvars
+IaC/plan.tfplan
+IaC/backend/.terraform
+IaC/main/.terraform
+IaC/terraform.dev.tfvars
+IaC/backend/terraform.tfstate.backup
+IaC/backend/terraform.tfstate
