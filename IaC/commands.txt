@@ -1,0 +1,8 @@
+// Get Azure subscription Id
+#az account list --output table  # to get the subscription id
+
+// Plan specifying the vars file
+terraform plan -out plan.tfplan -var-file ..\terraform.dev.tfvars
+
+// Check RabbitMQ container fdqn
+ az containerapp show --name rabbitmq-app --resource-group rabbitmq-resource-group --query "properties.configuration.ingress.fqdn" -o tsv
